@@ -1,0 +1,48 @@
+@use "variable" as var;
+.content-8 {
+  min-height: 70vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+
+  .foto-1 img {
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+  }
+  p {
+    font-size: 30px;
+    width: 650px;
+  }
+  .pos {
+    h2 {
+      font-size: 22px;
+      line-height: 3;
+    }
+    p {
+      line-height: 1;
+      font-size: 16px;
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .content-8 {
+    .foto-1 img {
+      width: 250px;
+      height: 250px;
+    }
+    p {
+      width: 100%;
+      padding: 10px;
+      font-size: 20px;
+    }
+  }
+  .pos {
+    padding: 10px;
+    h2 {
+      font-size: 20px;
+    }
+  }
+}

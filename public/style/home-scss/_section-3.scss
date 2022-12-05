@@ -1,0 +1,56 @@
+@use "variable" as var;
+.content-5 {
+  min-height: 100vh;
+  margin: 100px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 15px;
+  .portfolio-sub {
+    margin-left: 80px;
+    h2 {
+      font-size: 48px;
+      font-weight: var.$font-weight;
+    }
+    span {
+      font-size: 20px;
+      font-weight: 500;
+      color: var.$color;
+    }
+  }
+
+  .portfolio {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    .img-portfolio {
+      img {
+        width: 370px;
+        height: 470px;
+        background-color: lightgray;
+      }
+      .paraf-1 {
+        color: white;
+        font-weight: var.$font-weight;
+        position: absolute;
+        margin-top: -100px;
+        margin-left: 40px;
+        font-size: 24px;
+      }
+      .paraf-2 {
+        color: var.$color;
+        font-size: 14px;
+        margin-top: -70px;
+        margin-left: 40px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .portfolio {
+    .img-portfolio {
+      padding: 10px;
+    }
+  }
+}

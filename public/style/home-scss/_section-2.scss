@@ -1,0 +1,43 @@
+@use 'variable' as var;
+.content-3 {
+     background-color: #0A0A0B;
+     opacity: 0.85;
+     min-height: 50vh;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     align-items: center;
+     .content-4 {
+          background-color: white;
+          width: 550px;
+          padding: 20px;
+          h2 {
+               font-size: 48px;
+          }
+          .klik {
+               display: flex;
+               align-items: center;
+               // margin: 20px;
+               a {
+                    background-color: var.$color;
+                    text-decoration: none;
+                    padding: 16px ;
+                    color: white;
+
+               }
+          }
+     }
+     .klik-video {
+          p {
+               color: white;
+          }
+          img {
+               width: 100px;
+          }
+     }
+}
+@media screen and (max-width: 500px) {
+     .klik-video {
+          display: none;
+     }
+}

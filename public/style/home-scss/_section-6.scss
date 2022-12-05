@@ -1,0 +1,153 @@
+@use "variable" as var;
+
+#section-6 {
+  .section-6 {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+    span {
+      color: var.$color;
+    }
+
+    h1 {
+      line-height: 1;
+      font-size: 48px;
+      font-family: var.$font;
+      font-weight: 800;
+    }
+
+    .question {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #f5f5f5;
+      padding-top: 10px;
+      padding: 10px;
+
+      .tanda-tanya i {
+        background-color: white;
+        padding: 10px;
+        border-radius: 100%;
+      }
+
+      h2 {
+        font-size: 16px;
+        font-family: var.$font;
+        font-weight: 700;
+      }
+
+      i {
+        color: var.$color;
+      }
+    }
+
+    .container-question {
+      background-color: #f5f5f5;
+
+      .question1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+
+        .tanda-tanya i {
+          background-color: white;
+          padding: 10px;
+          border-radius: 100%;
+        }
+
+        h2 {
+          font-size: 16px;
+          font-weight: 700;
+        }
+
+        i {
+          color: var.$color;
+
+          .tanya {
+            background-color: black;
+          }
+        }
+      }
+
+      .paraf-question {
+        width: 400px;
+        padding: 10px;
+        margin-left: 93px;
+      }
+    }
+
+    .question-img {
+      display: flex;
+
+      img {
+        width: 270px;
+        height: 502px;
+      }
+
+      .question-img1 {
+        img {
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+
+  .consulting {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #0A0A0B;
+    width: 70vw;
+    height: 220px;
+    margin-top: 100px;
+
+    h1 {
+      color: white;
+      font-size: 30px;
+      font-family: var.$font;
+      font-weight: 800;
+      width: 400px;
+    }
+
+    .free-consulting {
+      a {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        background-color: var.$color;
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .section-6 {
+    // width: 100%;
+    .container {
+      width: 100%;
+      // padding: 10px;
+      h1 {
+        font: 20px;
+      }
+      .question {
+        width: 100%;
+        .tanda-tanya {
+          // margin-right: 100px;
+            i {
+              display: none;
+            }
+          .drop {
+            i {
+            }
+          }
+        }
+      }
+    }
+  }
+}

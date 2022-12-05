@@ -1,0 +1,81 @@
+@use "variable";
+
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  background: url(/src/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+
+  .head {
+    color: white;
+    margin-left: 150px;
+
+    h1 {
+      font-size: 90px;
+      line-height: 1;
+    }
+
+    p {
+      line-height: 1;
+      color: variable.$color;
+      font-size: 16px;
+      font-weight: "open sans" sans-serif;
+    }
+
+    .head-btn {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        background-color: variable.$color;
+        padding: 10px;
+      }
+    }
+  }
+
+  .btn {
+    min-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 10px;
+
+    i {
+      border: 1px solid variable.$color;
+      padding: 10px;
+      border-radius: 100%;
+
+      &:hover {
+        background-color: variable.$color;
+        transition: 0.7s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .head {
+      margin: 0;
+      padding: 30px;
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+    .btn {
+      min-height: auto;
+      margin-right: 250px;
+    }
+  }
+}

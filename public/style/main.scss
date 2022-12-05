@@ -1,0 +1,19 @@
+@use 'home-scss/variable';
+@use 'home-scss/navbar';
+@use 'home-scss/header';
+@use 'home-scss/section-1';
+@use 'home-scss/section-2';
+@use 'home-scss/section-3';
+@use 'home-scss/section-4';
+@use 'home-scss/section-5';
+@use 'home-scss/section-6';
+@use 'home-scss/section-7';
+@use 'home-scss/section-8';
+@use 'home-scss/footer';
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: variable.$font;
+}
